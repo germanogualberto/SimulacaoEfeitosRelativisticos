@@ -78,6 +78,8 @@ public class Simulador extends JFrame {
 		desktopPane.add(btnVoltar);
 		
 		final JSlider slider = new JSlider();
+		slider.setMaximum(99);
+		slider.setMinimum(1);
 		
 		slider.setToolTipText("selecione a fração de c");
 		slider.setValue(1);
@@ -260,11 +262,11 @@ public class Simulador extends JFrame {
 		new Object[][] {
 			{"Velocidade", dados.get(1), "m/s"},
 			{"Distancia", dados.get(2), "10⁹ m"},
-			{"Tempo na Nave", dados.get(3), "10⁹ s"},
-			{"Tempo na Terra", dados.get(4), "10⁹ s"},
-			{"Tempo no Destino", dados.get(5), "10⁹ s"},
-			{"Comprimento Contraido", dados.get(6), "m"},
-			{"Massa Relativistica", dados.get(7), "10³ kg"},
+			{"Tempo na Nave", dados.get(3), "Dia"},
+			{"Tempo na Terra", dados.get(4), "Dia"},
+			{"Tempo no Destino", dados.get(5), "Dia"},
+			{"Comprimento Contraido", dados.get(6).substring(0, 4), "m"},
+			{"Massa Relativistica", dados.get(7).substring(0, 5), "10³ kg"},
 			{"Energia relativistica", dados.get(8), "J"},
 			{"Energia gasta", dados.get(9), "J"},
 		},
