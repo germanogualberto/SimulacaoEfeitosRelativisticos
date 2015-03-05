@@ -267,7 +267,7 @@ public class Simulador extends JFrame {
 			{"Tempo no Destino", dados.get(5), "Dia"},
 			{"Comprimento Contraido", dados.get(6).substring(0, 4), "m"},
 			{"Massa Relativistica", dados.get(7).substring(0, 5), "10³ kg"},
-			{"Energia relativistica", dados.get(8), "J"},
+			{"Energia relativistica", dados.get(8), "J/s"},
 			{"Energia gasta", dados.get(9), "J"},
 		},
 		new String[] {
